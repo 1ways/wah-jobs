@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__logo" href="/">
+                <img class="header__logo-img" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item active">
+                        <a class="header__nav-link" href="#">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Advice</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Affiliates</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__action">
+                <a class="header__action-btn" href="signup.html">Sign Up</a>
+                <button class="primary-btn"><a href="login.html">Login</a></button>
+            </div>
+            <div class="header__burger">
+                <img class="header__burger-icon" src="./images/burger-menu.svg" alt="burger-icon">
+            </div>
+            <div class="header__mobile-menu">
+                <nav class="header__mobile-nav">
+                    <ul class="header__mobile-list">
+                        <li class="header__mobile-item active">
+                            <a class="header__mobile-link" href="#">Home</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="#">Advice</a>
+                        </li>
+                        <li class="header__mobile-item">
+                            <a class="header__mobile-link" href="#">Affiliates</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__mobile-action">
+                    <a class="header__mobile-action-btn" href="signup.html">Sign Up</a>
+                    <button class="primary-btn"><a href="login.html">Login</a></button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="auth section-pb">
+        <div class="wrapper">
+            <div class="auth__inner auth__inner-signup">
+                <h1 class="section-title"><span>Sign Up</span></h1>
+                <p class="section-small-text">Join our community today! Create an account to unlock exclusive features
+                    and personalized experiences.</p>
+                <form class="auth__form">
+                    <div class="auth__form-row">
+                        <input class="auth__form-input" type="text" name='first-name' placeholder="Enter First Name"
+                            required>
+                        <input class="auth__form-input" type="text" name='last-name' placeholder="Enter Last Name"
+                            required>
+                    </div>
+                    <div class="auth__form-row">
+                        <input class="auth__form-input" type="email" name='email' placeholder="Enter your Email"
+                            required>
+                        <div class="auth__form-wrap">
+                            <input class="auth__form-input" type="password" name='password'
+                                placeholder="Enter your Password" required>
+                            <img class="auth__form-icon" src="./images/eye-icon.svg" alt="eye">
+                        </div>
+                    </div>
+                    <div class="auth__form-bottom">
+                        <button class="primary-btn" type="submit">Sign Up</button>
+                        <a class="secondary-btn" href="login.html">Login</a>
+                        <h4 class="auth__form-other">Or Continue with</h4>
+                        <ul class="auth__form-items">
+                            <li class="auth__form-item"><img class="auth__form-img" src="images/google.svg"
+                                    alt="google"></li>
+                            <li class="auth__form-item"><img class="auth__form-img" src="images/facebook.svg"
+                                    alt="facebook"></li>
+                            <li class="auth__form-item"><img class="auth__form-img" src="images/apple.svg" alt="apple">
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="testi section-pb">
+        <div class="wrapper">
+            <h3 class="section-title">Our <span>Testimonials</span></h3>
+            <p class="section-small-text">Discover how Hire me now has transformed lives with innovative digital
+                solutions and personalized hiring service. See
+                why our clients trust us for a secure and prosperous financial journey</p>
+            <div class="testi__inner">
+                <div class="testi__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">Thanks to this platform, I landed my dream remote job as a UX
+                                designer. The personalized job alerts kept me informed,
+                                and the resume review service polished my application. Within weeks, I had multiple
+                                offers!
+                            </p>
+                            <h4 class="testi__slide-name">Sara T</h4>
+                        </div>
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">As a freelancer, I was skeptical about remote work. But this
+                                site
+                                changed everything. The curated job listings matched
+                                my skills perfectly. Now I enjoy work-life balance without compromising on income.</p>
+                            <h4 class="testi__slide-name">John D</h4>
+                        </div>
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">John Smith, Digital Marketer” “This platform connected me with
+                                remote opportunities I didn’t even know existed. The
+                                community support and expert advice made all the difference.</p>
+                            <h4 class="testi__slide-name">Emily G</h4>
+                        </div>
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">Thanks to this platform, I landed my dream remote job as a UX
+                                designer. The personalized job alerts kept me informed,
+                                and the resume review service polished my application. Within weeks, I had multiple
+                                offers!
+                            </p>
+                            <h4 class="testi__slide-name">Sara T</h4>
+                        </div>
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">As a freelancer, I was skeptical about remote work. But this
+                                site
+                                changed everything. The curated job listings matched
+                                my skills perfectly. Now I enjoy work-life balance without compromising on income.</p>
+                            <h4 class="testi__slide-name">John D</h4>
+                        </div>
+                        <div class="testi__slide swiper-slide">
+                            <div class="testi__slide-top">
+                                <img class="testi__slide-arrows" src="./images/arrows-icon.svg" alt="arrows">
+                            </div>
+                            <p class="testi__slide-text">John Smith, Digital Marketer” “This platform connected me with
+                                remote opportunities I didn’t even know existed. The
+                                community support and expert advice made all the difference.</p>
+                            <h4 class="testi__slide-name">Emily G</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="images/arrow-left.svg" alt="arrow-left">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="images/arrow-right.svg" alt="arrow-right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <h3 class="footer__title">Popular Jobs</h3>
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Technology and IT</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Software Developer</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Data Scientist
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Network Engineer
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Network Engineer
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Cybersecurity Analyst</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">UX/UI Designer
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Business and Finance</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Financial Analyst
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Marketing Manager</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Human Resources Specialist
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Management Consultant
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Investment Banker
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Healthcare and Medicine</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Registered Nurse
+
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Physician</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Physical Therapist
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Medical Laboratory Technician
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Pharmacist
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Education and Academia</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Teacher (Elementary, Middle, or High School)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">College Professor</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">School Counselor
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Librarian
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Education Administrator
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Creative Arts and Media</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Graphic Designer
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Content Creator (YouTuber, Blogger, Podcaster)
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Photographer
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Film Director
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Musician
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h4 class="footer__item-title">Sales and Customer Service</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Sales Representative
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Customer Support Specialist
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Retail Manager
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Account Executive
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">Call Center Agent
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

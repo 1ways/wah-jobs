@@ -1,0 +1,31 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --primary: #CAFF33;
+    --secondary: #1C1C1C;
+    --bg-1: #22251B;
+    --bg-2: #262626;
+    --bg-3: #1A1A1A;
+    --bg-4: #191919;
+    --bg-5: #333333;
+    --text-1: #B3B3B3;
+    --text-2: #757575;
+    --text-3: #E4E4E7;
+    --text-4: #BFBFBF;
+    --text-5: #59595A;
+}
+
+$black: var(--black);
+$white: var(--white);
+$primary: var(--primary);
+$secondary: var(--secondary);
+$bg1: var(--bg-1);
+$bg2: var(--bg-2);
+$bg3: var(--bg-3);
+$bg4: var(--bg-4);
+$bg5: var(--bg-5);
+$text1: var(--text-1);
+$text2: var(--text-2);
+$text3: var(--text-3);
+$text4: var(--text-4);
+$text5: var(--text-5);

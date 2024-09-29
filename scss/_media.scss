@@ -1,0 +1,520 @@
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .section-small-text {
+        font-size: 14px;
+    }
+
+    .hero__design {
+        display: none;
+    }
+
+    .jobs__top {
+        margin-bottom: 60px;
+    }
+
+    .jobs__item {
+        flex-wrap: wrap;
+    }
+
+    .jobs__item-content {
+        padding-right: 0;
+    }
+
+    .jobs__info {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 92px;
+        display: flex;
+        flex-direction: column;
+
+        &-time {
+            text-align: left;
+            order: 2;
+            margin-bottom: 0;
+            margin-top: 16px;
+        }
+
+        &-links {
+            flex-direction: row;
+            gap: 8px;
+            flex-wrap: wrap;
+
+            .jobs__item-tag:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .pro__wrapper {
+        padding: 24px;
+    }
+
+    .pro__inner {
+        padding: 24px 0;
+    }
+
+    .pro__plans-item {
+        padding: 30px;
+    }
+
+    .testi__swiper {
+        margin-top: 40px;
+
+        &::after {
+            width: 298px;
+            height: 291px;
+        }
+
+        &::before {
+            width: 298px;
+            height: 291px;
+        }
+    }
+
+    .testi__slide-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .testi__slide-top {
+        margin-bottom: 20px;
+    }
+
+    .faq__items {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hire__inner {
+        .primary-btn {
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
+    }
+
+    .footer__item:nth-child(3n) {
+        padding-left: 0;
+    }
+
+    .footer__item {
+        padding-right: 15px;
+    }
+
+    .job__inner {
+        flex-direction: column;
+    }
+
+    .job__content {
+        order: 1;
+    }
+
+    .job__info {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .auth__form {
+        margin-top: 40px;
+    }
+
+    .auth__form-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .auth__form-input {
+        margin: 10px 0;
+    }
+
+    .auth__form-bottom {
+        margin-top: 10px;
+    }
+
+    .auth__form-other::before,
+    .auth__form-other::after {
+        width: 27.9%;
+    }
+}
+
+@media (max-width: 700px) {
+    .top-design {
+        max-width: 300px;
+    }
+
+    .section-pb {
+        padding-bottom: 60px;
+    }
+
+    .header {
+        top: 15px;
+        padding: 6.5px;
+
+        &__logo-img {
+            max-width: 60px;
+        }
+
+        &__burger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 100%;
+            background-color: $primary;
+            cursor: pointer;
+
+            &-icon {
+                max-width: 35px;
+            }
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__action {
+            display: none;
+        }
+
+        &__mobile {
+            &-menu {
+                display: block;
+                position: absolute;
+                z-index: 10000;
+                left: -100%;
+                top: -16px;
+                height: 100vh;
+                background-color: $secondary;
+                border: 1px solid $bg2;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                padding: 24px;
+                transition: all 0.1s ease-in-out;
+
+                &.active {
+                    left: -17px;
+                }
+            }
+
+            &-nav {
+                margin-bottom: 20px;
+            }
+
+            &-item {
+                font-size: 14px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                &.active {
+                    padding: 10px 18px;
+                    color: $primary;
+                }
+            }
+
+            &-action-btn {
+                margin-right: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .hero__inner {
+        padding-top: 98px;
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-small-text {
+        font-size: 12px;
+    }
+
+    .hero__form {
+        margin: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__form-wrap--jobs,
+    .hero__form-wrap--where {
+        width: 100%;
+    }
+
+    .hero__form-wrap--where {
+        margin-bottom: 20px;
+    }
+
+    .hero__form-input {
+        width: 100%;
+
+        &--jobs {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .hero__form-btn {
+        padding: 14px 24px;
+        border-radius: 82px;
+    }
+
+    .hero__trending {
+        flex-direction: column;
+
+        &-title {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+    }
+
+    .categories__item {
+        font-size: 12px;
+    }
+
+    .jobs__top {
+        margin-bottom: 40px;
+
+        &-btn {
+            padding: 5px;
+
+            button {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .jobs__top-hide {
+        display: none;
+    }
+
+    .jobs__item-avatar {
+        min-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .jobs__item {
+        padding: 0;
+        padding-bottom: 24px;
+    }
+
+    .jobs__item-title {
+        font-size: 22px;
+    }
+
+    .jobs__item-company {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .jobs__item-company-name {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .jobs__item-desc {
+        font-size: 14px;
+    }
+
+    .jobs__info {
+        padding-left: 0;
+    }
+
+    .jobs__info-time {
+        font-size: 14px;
+    }
+
+    .jobs__item-company-tag {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .jobs__item-tag {
+        padding: 10px;
+    }
+
+    .pro__inner {
+        padding: 24px;
+    }
+
+    .pro__advantages-text {
+        font-size: 14px;
+    }
+
+    .pro__plans {
+        margin-top: 20px;
+        padding: 0;
+        flex-direction: column;
+
+        &-item {
+            width: 100%;
+            padding: 20px;
+        }
+    }
+    .pro__offer {
+        font-size: 12px;
+    }
+
+    .testi__swiper {
+        &::after {
+            width: 100px;
+            height: 291px;
+        }
+
+        &::before {
+            width: 100px;
+            height: 291px;
+        }
+    }
+
+    .faq__item {
+        padding: 24px;
+    }
+
+    .faq__item-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+
+    .faq__item-text {
+        font-size: 14px;
+    }
+
+    .hire__inner {
+        padding: 24px;
+        flex-direction: column;
+        text-align: center;
+
+        .primary-btn {
+            margin-right: 0;
+            margin-top: 20px;
+        }
+    }
+
+    .footer__item-title {
+        font-size: 14px;
+    }
+
+    .footer__list-item {
+        font-size: 14px;
+    }
+
+    .footer__item {
+        width: 50%;
+        margin-bottom: 20px;
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    .job__inner {
+        padding-top: 98px;
+        padding-bottom: 40px;
+    }
+
+    .job__info-name {
+        font-size: 14px;
+    }
+
+    .job__info-desc-first {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .job__info-desc {
+        font-size: 14px;
+    }
+
+    .job__links .categories .categories__item:first-child {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .job .primary-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .job__emails {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .job__emails-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .job__item-list {
+        font-size: 14px;
+    }
+
+    .job__info {
+        .categories {
+            justify-content: center;
+        }
+    }
+
+    .auth {
+        padding-top: 89px;
+
+        &__inner {
+            padding: 15px;
+        }
+
+        &__form {
+            margin-top: 20px;
+            width: 100%;
+
+            &-wrap {
+                width: 100%;
+            }
+
+            &-bottom {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .auth__form-input {
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .auth__form .primary-btn {
+        margin-bottom: 20px;
+    }
+
+    .auth__form-item {
+        width: 45px;
+        height: 45px;
+    }
+
+    .auth__form-forgot {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
