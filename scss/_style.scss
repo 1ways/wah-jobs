@@ -83,10 +83,17 @@ body {
         &-item {
             font-size: 14px;
             padding: 10px 18px;
+            transition: all 0.1s linear;
 
             &.active {
                 background-color: $bg2;
                 border-radius: 82px;
+            }
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
             }
         }
     }
@@ -98,6 +105,12 @@ body {
         &-btn {
             margin-right: 20px;
             font-size: 14px;
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
     }
 }
@@ -108,11 +121,19 @@ body {
     color: $secondary;
     background-color: $primary;
     padding: 12px 24px;
-    border: none;
+    border: 1px solid $primary;
     outline: none;
     border-radius: 82px;
     line-height: 1.5;
     cursor: pointer;
+    transition: all 0.1s linear;
+
+    @media (min-width: 1200px) {
+        &:hover {
+            background-color: transparent;
+            color: $primary;
+        }
+    }
 }
 
 .secondary-btn {
@@ -127,6 +148,27 @@ body {
     outline: none;
     border-radius: 82px;
     cursor: pointer;
+    transition: all 0.1s linear;
+
+    @media (min-width: 1200px) {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: $bg2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $bg2;
 }
 
 .hero {
@@ -154,6 +196,7 @@ body {
             outline: none;
             border: 1px solid $bg2;
             position: relative;
+            cursor: pointer;
 
             &::placeholder {
                 font-family: 'Inter';
@@ -164,6 +207,16 @@ body {
             &--jobs {
                 border-top-left-radius: 82px;
                 border-bottom-left-radius: 82px;
+
+                &:focus {
+                    border: 1px solid $primary;
+                }
+            }
+
+            &--where {
+                &:focus {
+                    border: 1px solid $primary;
+                }
             }
         }
 
@@ -206,12 +259,57 @@ body {
             padding: 0 24px;
             border-top-right-radius: 82px;
             border-bottom-right-radius: 82px;
+            border: 1px solid $primary;
             color: $secondary;
             cursor: pointer;
+            transition: all 0.1s linear;
 
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    background-color: $secondary;
+                    color: $primary;
+                }
+            }
+        }
+
+        &-dropdown {
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            right: 0;
+            display: none;
+            max-height: 218.4px;
+            overflow-y: auto;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        &-option {
+            font-family: 'Inter';
+            text-align: left;
+            color: $text1;
+            padding: 16px;
+            background-color: $secondary;
+            border: 1px solid $bg2;
+            font-weight: 400;
+            cursor: pointer;
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            @media (max-width: 700px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -249,6 +347,15 @@ body {
         background-color: $secondary;
         border-radius: 82px;
         border: 1px solid $bg2;
+        transition: all 0.1s linear;
+
+        a {
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
     }
 }
 
@@ -290,6 +397,7 @@ body {
 
             &--transparent {
                 button {
+                    border: none;
                     background-color: transparent;
                     color: $white;
                 }
@@ -338,6 +446,14 @@ body {
             font-size: 24px;
             margin-bottom: 12px;
             line-height: 1.2;
+
+            a {
+                @media (min-width: 1200px) {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
 
         &-company {
@@ -403,6 +519,8 @@ body {
             align-items: center;
             justify-content: center;
 
+            transition: all 0.1s linear;
+
             &-img {
                 margin-right: 3px;
                 max-width: 14px;
@@ -441,6 +559,14 @@ body {
 
             .jobs__item-tag:not(:last-child) {
                 margin-bottom: 8px;
+            }
+
+            .jobs__item-tag {
+                @media (min-width: 1200px) {
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
             }
         }
     }
@@ -623,6 +749,12 @@ body {
             border: 1px solid $primary;
             outline: none;
             cursor: pointer;
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
 
         .primary-btn {
@@ -691,8 +823,16 @@ body {
         background-color: $secondary;
         border-radius: 100px;
         border: 1px solid $bg2;
+        transition: all 0.1s linear;
+
         &::after {
             content: '';
+        }
+
+        @media (min-width: 1200px) {
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
     .swiper-button-prev {
@@ -767,6 +907,8 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         position: relative;
+        overflow: hidden;
+        transition: all 0.2s linear;
 
         &::after {
             content: '';
@@ -781,6 +923,12 @@ body {
                 rgba(25, 25, 25, 100%),
                 rgba(25, 25, 25, 0%)
             );
+        }
+
+        &.expanded {
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -822,10 +970,28 @@ body {
         border: 1px solid $bg2;
         background-color: $secondary;
 
+        transform: rotateZ(0deg);
+
         cursor: pointer;
 
         &-icon {
             margin-left: 4px;
+
+            &-up {
+                transform: rotateZ(180deg);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            &:hover {
+                color: $primary;
+            }
+
+            &:hover .faq__all-icon {
+                path {
+                    stroke: $primary;
+                }
+            }
         }
     }
 }
@@ -914,6 +1080,14 @@ body {
             margin-bottom: 8px;
         }
     }
+
+    &__list-item {
+        @media (min-width: 1200px) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .job {
@@ -970,6 +1144,12 @@ body {
             font-weight: 400;
             color: $white;
             cursor: pointer;
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
     }
 
@@ -1162,6 +1342,10 @@ body {
                 line-height: 1.5;
                 color: $text5;
             }
+
+            &:focus {
+                border: 1px solid $primary;
+            }
         }
 
         &-bottom {
@@ -1239,6 +1423,7 @@ body {
                 rgba(202, 255, 51, 5%),
                 rgba(202, 255, 51, 0%)
             );
+            transition: all 0.1s linear;
 
             display: flex;
             align-items: center;
@@ -1246,6 +1431,16 @@ body {
 
             &:not(:last-child) {
                 margin-right: 20px;
+            }
+
+            @media (min-width: 1200px) {
+                &:hover {
+                    background: linear-gradient(
+                        to bottom,
+                        rgba(202, 255, 51, 30%),
+                        rgba(202, 255, 51, 0%)
+                    );
+                }
             }
         }
     }
